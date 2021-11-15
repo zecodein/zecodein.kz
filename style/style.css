@@ -23,7 +23,7 @@ h3 {
 
 /* container */
 .container {
-    background: url("img/vscode0.jpg"), rgba(0, 0, 0, 5) no-repeat center top / cover;
+    background: url("img/vscode1.jpg"), rgba(0, 0, 0, 5) no-repeat center top / cover;
     background-size: cover;
     width: auto;
     height: 1000px;
@@ -43,7 +43,7 @@ header {
 /* nav menu */
 .menu {
 	text-decoration: none;
-	color: black;
+	color: white;
 	transition: .1s;
 	margin-left: 150px;
 }
@@ -86,7 +86,7 @@ header {
 }
 
 .color-btn1 {
-    background-color: #2ed3ae;
+    background-color: #56b62d;
     width: 154px;
     transition: .1s;
 }
