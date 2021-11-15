@@ -5,12 +5,12 @@
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
-    background-color: #fff;
+    background-color: #545454;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h3 {
 
 /* container */
 .container {
-    background: url("img/laptop.jpg"), rgba(0, 0, 0, 5) no-repeat center top / cover;
+    background: url("img/vscode0.jpg"), rgba(0, 0, 0, 5) no-repeat center top / cover;
     background-size: cover;
     width: auto;
     height: 1000px;
@@ -49,11 +49,11 @@ header {
 }
 
 .menu:hover {
-    color: #2ed3ae;
+    color: #56b62d;
 }
 
 .active {
-    color: #2ed3ae;
+    color: #56b62d;
 }
 
 .navbar {
@@ -102,7 +102,7 @@ header {
 }
 
 .color-btn2:hover {
-    background-color: #2ed3ae;
+    background-color: #56b62d;
 }
 
 /* About Us */
