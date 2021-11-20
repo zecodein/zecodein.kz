@@ -240,29 +240,68 @@
 
   </div><!-- /.container -->
 
+
+  <!-- Contact us -->
+
+
+
   <!-- Contacts part -->
 
   <div class="container" id="contacts">
 
     <div class="row">
 
-      <div class="my-5">
-        <h2>Наши контакты</h2>
+      <div class="my-3">
+        <h2>Связаться с нами</h2>
       </div>
 
-      <div class="col-lg-4">
-        <h5>+7 (771) 513 5555</h5>
-        <p>Отдел работы с клиентами</p>
+      <div class="col-lg-6">
+
+        <form action="submit" class="needs-validation">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ваше Имя*</label>
+            <input type="text" class="form-control" required id="exampleFormControlInput1" placeholder="Иван Иванов">
+            <div class="invalid-tooltip">
+              Введите свое имя.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Номер телефона*</label>
+            <input type="tel" pattern="[8]{1}[0-9]{10}" required class="form-control" id="exampleFormControlInput1" size="11" placeholder="8 (777) 123 4567">
+            <div class="invalid-tooltip">
+              Номер не заполнен.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Электронная почта</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Комментарии</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Связаться</button>
+          </div>
+        </form>
       </div>
 
-      <div class="col-lg-4">
-        <h5>sales@zecodein.kz</h5>
-        <p>Электронная почта</p>
-      </div>
 
       <div class="col-lg-4">
-        <h5>проспект Мангилик Ел, ​С4.5</h5>
-        <p>г.Нур-Султан</p>
+        <h5 class="mb-3">
+          Тел.: +7 (771) 513 5555
+        </h5>
+        <!-- <p>Отдел работы с клиентами</p> -->
+   
+        <h5 class="mb-3">
+          Email: <a href="mailto:sales@zecodein.kz?subject=Новый Запрос!&body=Здравствуйте!">sales@zecodein.kz</a>
+        </h5>
+        <!-- <p>Электронная почта</p> -->
+  
+        <h5 class="mb-3">
+          г.Нур-Султан, проспект Мангилик Ел, ​С4.5
+        </h5>
+        <!-- <p>Адрес</p> -->
       </div>
 
 
