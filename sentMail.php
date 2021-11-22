@@ -7,7 +7,7 @@ if(isset($_POST['submit'])) {
  $fromEmail = $_POST['email']; //getting customer email
  $phone = $_POST['tel']; //getting customer Phome number
  $subject = $_POST['subject']; //getting subject line from client
- $subject2 = "Confirmation: Message was submitted successfully | HMA WebDesign"; // For customer confirmation
+ $subject2 = "Confirmation: Message was submitted successfully"; // For customer confirmation
  
  //Email body I will receive
  $message = "Cleint Name: " . $name . "\n"
@@ -21,7 +21,7 @@ if(isset($_POST['submit'])) {
  . "Regards," . "\n" . "- HMA WebDesign";
  
  //Email headers
- $headers = "From: " . $fromEmail; // Client email, I will receive
+ $headers = "From: " . $mailto; // Client email, I will receive
  $headers2 = "From: " . $mailto; // This will receive client
  
  //PHP mailer function
