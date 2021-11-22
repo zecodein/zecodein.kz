@@ -281,10 +281,14 @@
             <label for="exampleFormControlInput1" class="form-label">Электронная почта</label>
             <input type="email" required name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Категория</label>
-            <textarea class="form-control" name="subject" id="exampleFormControlTextarea1"></textarea>
-          </div>
+
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Выберите категорию</option>
+            <option value="1">Веб-сайт</option>
+            <option value="2">Программное обеспечение и веб-сервисы</option>
+            <option value="3">Мобильные приложения</option>
+          </select>
+
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Комментарии</label>
             <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Расскажите нам о своем запросе" rows="3"></textarea>

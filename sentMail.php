@@ -15,7 +15,7 @@ if(isset($_POST['submit'])) {
  . "Client Message: " . "\n" . $_POST['message'];
  
  //Message for client confirmation
- $message2 = "Уважаемый " . $name . "\n"
+ $message2 = "Уважаемый " . $name . "\n\n"
  . "Спасибо за обращение! Мы свяжемся с вами в ближайщее время!" . "\n\n"
  . "Вы обратились со следующим запросом: " . "\n" . $_POST['message'] . "\n\n"
  . "С уважением," . "\n" . "zecodein";
