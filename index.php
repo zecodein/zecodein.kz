@@ -289,12 +289,12 @@
             <label for="exampleFormControlTextarea1" class="form-label">Комментарии</label>
             <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Расскажите нам о своем запросе" rows="3"></textarea>
           </div>
-                    <div>
+          <div>
             <p class="success"> <?php echo $success;  ?></p>
             <p class="failed"> <?php echo $failed;  ?></p>
           </div>
           <div class="mb-3">
-            <button class="btn btn-primary" type="submit"name="submit">Связаться</button>
+            <button class="btn btn-primary" type="submit" name="submit">Связаться</button>
           </div>
         </form>
       </div>

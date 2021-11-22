@@ -7,7 +7,7 @@ if(isset($_POST['submit'])) {
  $fromEmail = $_POST['email']; //getting customer email
  $phone = $_POST['tel']; //getting customer Phome number
  $subject = $_POST['subject']; //getting subject line from client
- $subject2 = "Confirmation: Message was submitted successfully"; // For customer confirmation
+ $subject2 = "Подтверждение: Ваш запрос был отправлен успешно!"; // For customer confirmation
  
  //Email body I will receive
  $message = "Cleint Name: " . $name . "\n"
