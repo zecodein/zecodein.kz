@@ -15,14 +15,14 @@ if(isset($_POST['submit'])) {
  . "Client Message: " . "\n" . $_POST['message'];
  
  //Message for client confirmation
- $message2 = "Dear" . $name . "\n"
- . "Thank you for contacting us. We will get back to you shortly!" . "\n\n"
- . "You submitted the following message: " . "\n" . $_POST['message'] . "\n\n"
- . "Regards," . "\n" . "- HMA WebDesign";
+ $message2 = "Уважаемый " . $name . "\n"
+ . "Спасибо за обращение! Мы свяжемся с вами в ближайщее время!" . "\n\n"
+ . "Вы обратились со следующим запросом: " . "\n" . $_POST['message'] . "\n\n"
+ . "С уважением," . "\n" . "zecodein";
  
  //Email headers
- $headers = "From: " . $mailto; // Client email, I will receive
- $headers2 = "From: " . $mailto; // This will receive client
+ $headers = "From: " . $fromEmail; // Client email, I will receive (optionally, can be client email)
+ $headers2 = "From: " . $mailto; // This will receive client 
  
  //PHP mailer function
  
@@ -32,9 +32,9 @@ if(isset($_POST['submit'])) {
   //Checking if Mails sent successfully
  
   if ($result1 && $result2) {
-    $success = "Your Message was sent Successfully!";
+    $success = "Ваше запрос был отправлен успешно!";
   } else {
-    $failed = "Sorry! Message was not sent, Try again Later.";
+    $failed = "Извините! Ваш запрос не был отправлен, проверьте данные и попробуйте отправить снова.";
   }
  
 }
