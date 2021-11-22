@@ -262,7 +262,7 @@
             <h2>Связаться с нами</h2>
           </div>
 
-        <form action="submit" action="" method="post" class="needs-validation">
+        <form action="" method="post" class="needs-validation">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Ваше Имя*</label>
             <input type="text" class="form-control"  name="name" required id="exampleFormControlInput1" placeholder="Иван Иванов">
@@ -289,7 +289,7 @@
             <label for="exampleFormControlTextarea1" class="form-label">Комментарии</label>
             <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Расскажите нам о своем запросе" rows="3"></textarea>
           </div>
-          <div>
+                    <div>
             <p class="success"> <?php echo $success;  ?></p>
             <p class="failed"> <?php echo $failed;  ?></p>
           </div>
