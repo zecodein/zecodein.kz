@@ -284,9 +284,9 @@
 
           <select class="form-select mb-3" aria-label="Default select example">
             <option selected>Выберите категорию</option>
-            <option value="1">Веб-сайт</option>
-            <option value="2">Программное обеспечение и веб-сервисы</option>
-            <option value="3">Мобильные приложения</option>
+            <option value="1" name="subject">Веб-сайт</option>
+            <option value="2" name="subject">Программное обеспечение и веб-сервисы</option>
+            <option value="3" name="subject">Мобильные приложения</option>
           </select>
 
           <div class="mb-3">
