@@ -21,13 +21,13 @@ if(isset($_POST['submit'])) {
  . "С уважением," . "\n" . "zecodein";
  
  //Email headers
- $headers = "From: " . $fromEmail; // Client email, I will receive (optionally, can be client email)
+ $headers = "From: " . $mailto; // Client email, I will receive (optionally, can be client email)
  $headers2 = "From: " . $mailto; // This will receive client 
  
  //PHP mailer function
  
   $result1 = mail($mailto, $subject, $message, $headers); // This email sent to My address
-  $result2 = mail($mailto, $subject2, $message2, $headers2); //This confirmation email to client
+  $result2 = mail($fromEmail, $subject2, $message2, $headers2); //This confirmation email to client
  
   //Checking if Mails sent successfully
  
