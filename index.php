@@ -8,7 +8,12 @@
     <meta name="description" content="">
     <!-- <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1"> -->
+    
 
+    <meta property="og:title" content="zecodein лендинг страница">
+    <meta property="og:site_name" content="zecodein">
+    <meta property="og:description" content="Команда разработчиков">
+    <meta property="og:image" content="https://www.zecodein.kz/img/z_logo3_1.svg">
     <link rel="icon" href="img/z_logo3_1.svg">
     <title>zecodein</title>
 
