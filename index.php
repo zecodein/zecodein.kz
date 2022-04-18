@@ -12,9 +12,9 @@
 
     <meta property="og:title" content="zecodein">
     <meta property="og:site_name" content="zecodein">
-    <meta property="og:url" content="https://www.zecodein.kz/">
+    <meta property="og:url" content="https://zecodein.kz/">
     <meta property="og:description" content="Создание сайтов и веб приложений любой сложности под нужды вашего бизнеса.">
-    <meta property="og:image" content="/img/z_logo3_1.svg">
+    <meta property="og:image" content="https://www.zecodein.kz/img/z_logo3_1.svg">
     <link rel="icon" href="img/z_logo3_1.svg">
     <!-- <title>zecodein</title> -->
 
