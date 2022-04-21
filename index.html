@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+        <title>zecodein</title>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <nav>
+                <div class="nav-wrapper" style="background-color: #313a46;">
+                    <a href="#!" class="brand-logo center">ze<span style="color: #38a4c4;">code</span>in</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О Нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="sidenav" id="mobile-demo">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О Нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+
+
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.fixed-action-btn');
+                var instances = M.FloatingActionButton.init(elems, { hoverEnabled: true });
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.dropdown-trigger');
+                var instances = M.Dropdown.init(elems, { alignment: 'left' });
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems, {edge:'right'});
+            });
+        </script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+    </body>
+
+</html>
