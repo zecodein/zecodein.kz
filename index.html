@@ -39,10 +39,53 @@
                     </div>
                 </nav>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s7 grey-text text-darken-2">
+                        <h4>Связаться с нами</h4>
+                        <form>
+                            <div class="input-field">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input type="text" id="name">
+                                <label for="name" class="active">Ваше ФИО*</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">phone</i>
+                                <input type="text" id="number" class="validate" placeholder="+7(7--)-------">
+                                <label for="name" class="active">Номер телефона*</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">email</i>
+                                <input type="email" id="email" class="validate">
+                                <label for="email" class="active">Электронная почта</label>
+                            </div>
 
-            
+                            <div class="input-field">
+                                <i class="material-icons prefix">list</i>
+                                <select>
+                                    <option value="" disabled selected>Выберите категорию</option>
+                                    <option value="1">Веб-сайт</option>
+                                    <option value="2">Программное обеспечение и веб сервисы</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <i class="material-icons prefix">create</i>
+                                <textarea id="textarea" class="materialize-textarea"></textarea>
+                                <label for="textarea" class="active">Комментарий</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="col s5 grey-text text-darken-2">
+                        <h4>Контакты</h4>
+                        <h6>Тел: +7 (771) 513 5555</h6>
+                        <h6>Email: <a href="sales@zecodein.kz">sales@zecodein.kz</a></h6>
+                        <h6>г.Нур-Султан, проспект Мангилик Ел, ​С4.5</h6>
+                    </div>
+                </div>
+            </div>
         </div>
-
         <footer class="page-footer white">
             <div class="footer-copyright">
                 <div class="container black-text">
@@ -65,6 +108,10 @@
             document.addEventListener('DOMContentLoaded', function () {
                 var elems = document.querySelectorAll('.sidenav');
                 var instances = M.Sidenav.init(elems, { edge: 'right' });
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('select');
+                var instances = M.FormSelect.init(elems, {});
             });
         </script>
         <script type="text/javascript" src="js/materialize.js"></script>
