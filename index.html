@@ -11,82 +11,169 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+        <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </head>
 
     <body>
-        <div class="container-fluid">
-            <div class="navbar-fixed">
-                <nav>
-                    <div class="nav-wrapper" style="background-color: #313a46;">
-                        <a href="#!" class="brand-logo center">ze<span style="color: #38a4c4;">code</span>in</a>
-                        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
-                                class="material-icons">menu</i></a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">О Нас</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                        <ul class="sidenav" id="mobile-demo">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">О Нас</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="container">
+
+        <div class="navbar-fixed z-depth-3">
+            <nav>
+                <div class="nav-wrapper" style="background-color: #313a46;">
+                    <img style="max-height:23px;" src="img/logo.svg" alt="">
+                    <a href="#!" class="brand-logo center">ze<span style="color: #38a4c4;">code</span>in</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
+                            class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О Нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                    <ul class="sidenav" id="mobile-demo">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О Нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div style="height:1000px"></div>
+        <div class="container-fluid z-depth-3" style="background-color: #313a46;">
+            <div class="container white-text"><br>
+                <h2>Веб разработка</h2>
                 <div class="row">
-                    <div class="col s7 grey-text text-darken-2">
-                        <h4>Связаться с нами</h4>
-                        <form>
-                            <div class="input-field">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input type="text" id="name">
-                                <label for="name" class="active">Ваше ФИО*</label>
-                            </div>
-                            <div class="input-field">
-                                <i class="material-icons prefix">phone</i>
-                                <input type="text" id="number" class="validate" placeholder="+7(7--)-------">
-                                <label for="name" class="active">Номер телефона*</label>
-                            </div>
-                            <div class="input-field">
-                                <i class="material-icons prefix">email</i>
-                                <input type="email" id="email" class="validate">
-                                <label for="email" class="active">Электронная почта</label>
-                            </div>
-
-                            <div class="input-field">
-                                <i class="material-icons prefix">list</i>
-                                <select>
-                                    <option value="" disabled selected>Выберите категорию</option>
-                                    <option value="1">Веб-сайт</option>
-                                    <option value="2">Программное обеспечение и веб сервисы</option>
-                                </select>
-                            </div>
-
-                            <div class="input-field">
-                                <i class="material-icons prefix">create</i>
-                                <textarea id="textarea" class="materialize-textarea"></textarea>
-                                <label for="textarea" class="active">Комментарий</label>
-                            </div>
-                        </form>
+                    <div class="col s12 m12 l4">
+                        <i class="material-icons small">photo</i>
+                        <blockquote>
+                            <p class="flow-text">Мы используем самые передовые методы веб-дизайна, включая адаптивность,
+                                мобильную
+                                оптимизацию, HTML5 и CSS, чтобы наилучшим образом удовлетворить потребности наших
+                                клиентов.
+                            </p>
+                        </blockquote>
+                        
                     </div>
-                    <div class="divider"></div>
-                    <div class="col s5 grey-text text-darken-2">
-                        <h4>Контакты</h4>
-                        <h6>Тел: +7 (771) 513 5555</h6>
-                        <h6>Email: <a href="sales@zecodein.kz">sales@zecodein.kz</a></h6>
-                        <h6>г.Нур-Султан, проспект Мангилик Ел, ​С4.5</h6>
+                    <div class="col s12 m12 l4">
+                        <i class="material-icons small">devices</i>
+                        <blockquote>
+                            <p class="flow-text">Наши веб-сайты созданы для бесперебойной работы на всех устройствах.
+                            </p>
+                        </blockquote>
+                    </div>
+                    <div class="col s12 m12 l4">
+                        <i class="material-icons small">speed</i>
+                        <blockquote>
+                            <p class="flow-text">Создание серверов на одном из самых быстрых языков программирования.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m12 l4">
+                        <i class="material-icons small">forum</i>
+                        <blockquote>
+                            <p class="flow-text">От веб-сайтов брошюр до решений для электронной коммерции, мы
+                                обеспечиваем превосходный,
+                                индивидуальный пользовательский опыт.</p>
+                        </blockquote>
+                        
+
+                    </div>
+                    <div class="col s12 m12 l4">
+                        <i class="material-icons small">headset_mic</i>
+                        <blockquote>
+                            <p class="flow-text">Обратная связь на всех этапах разработки.
+                            </p>
+                        </blockquote>
+                    </div>
+                    <div class="col s12 m12 l4">
+                        <i class="material-icons small">sentiment_very_satisfied
+                        </i>
+                        <blockquote>
+                            <p class="flow-text">Поддержка и сопровождение ПО при необходимости.</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col grey-text text-darken-3">
+                    <h2>Наши проекты</h2>
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <div  onclick="location.href='https://thegarage.kz/'" class="card" style="cursor: pointer;">
+                                <div class="card-image">
+                                    <img src="img/garage.svg">
+
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">THE GARAGE</span>
+                                    <p>Система бронирования мест в автомойки.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer class="page-footer white">
+
+        <div class="divider"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l7 grey-text text-darken-2">
+                    <h4>Связаться с нами</h4>
+                    <form>
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" id="name">
+                            <label for="name" class="active">Ваше ФИО*</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">phone</i>
+                            <input type="text" id="number" class="validate" placeholder="+7(7--)-------">
+                            <label for="name" class="active">Номер телефона*</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="email" class="validate">
+                            <label for="email" class="active">Электронная почта</label>
+                        </div>
+
+                        <div class="input-field">
+                            <i class="material-icons prefix">list</i>
+                            <select>
+                                <option value="" disabled selected>Выберите категорию</option>
+                                <option value="1">Веб-сайт</option>
+                                <option value="2">Программное обеспечение и веб сервисы</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">create</i>
+                            <textarea id="textarea" class="materialize-textarea"></textarea>
+                            <label for="textarea" class="active">Комментарий</label>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="contacts" class="col s12 m12 l5 grey-text text-darken-2">
+                    <h4>Контакты</h4>
+                    <h6>Тел: +7 (771) 513 5555</h6>
+                    <h6>Email: <a href="sales@zecodein.kz">sales@zecodein.kz</a></h6>
+                    <h6>г.Нур-Султан, проспект Мангилик Ел, ​С4.5</h6>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="page-footer white ">
             <div class="footer-copyright">
                 <div class="container black-text">
                     powered by ze<span style="color: #38a4c4;">code</span>in
