@@ -17,7 +17,6 @@
     </head>
 
     <body>
-
         <div class="navbar-fixed z-depth-3">
             <nav>
                 <div class="nav-wrapper" style="background-color: #313a46;">
@@ -40,6 +39,7 @@
                 </div>
             </nav>
         </div>
+
         <div style="height:1000px"></div>
         <div class="container-fluid z-depth-3" style="background-color: #313a46;">
             <div class="container white-text"><br>
@@ -54,7 +54,6 @@
                                 клиентов.
                             </p>
                         </blockquote>
-                        
                     </div>
                     <div class="col s12 m12 l4">
                         <i class="material-icons small">devices</i>
@@ -79,8 +78,6 @@
                                 обеспечиваем превосходный,
                                 индивидуальный пользовательский опыт.</p>
                         </blockquote>
-                        
-
                     </div>
                     <div class="col s12 m12 l4">
                         <i class="material-icons small">headset_mic</i>
@@ -107,7 +104,7 @@
                     <h2>Наши проекты</h2>
                     <div class="row">
                         <div class="col s12 m4">
-                            <div  onclick="location.href='https://thegarage.kz/'" class="card" style="cursor: pointer;">
+                            <div onclick="location.href='https://thegarage.kz/'" class="card" style="cursor: pointer;">
                                 <div class="card-image">
                                     <img src="img/garage.svg">
 
@@ -125,7 +122,6 @@
         </div>
 
         <div class="divider"></div>
-
         <div class="container">
             <div class="row">
                 <div class="col s12 m12 l7 grey-text text-darken-2">
@@ -146,7 +142,6 @@
                             <input type="email" id="email" class="validate">
                             <label for="email" class="active">Электронная почта</label>
                         </div>
-
                         <div class="input-field">
                             <i class="material-icons prefix">list</i>
                             <select>
@@ -162,7 +157,6 @@
                         </div>
                     </form>
                 </div>
-
                 <div id="contacts" class="col s12 m12 l5 grey-text text-darken-2">
                     <h4>Контакты</h4>
                     <h6>Тел: +7 (771) 513 5555</h6>
@@ -172,7 +166,6 @@
             </div>
         </div>
 
-
         <footer class="page-footer white ">
             <div class="footer-copyright">
                 <div class="container black-text">
@@ -181,27 +174,9 @@
             </div>
         </footer>
 
-
         <!--JavaScript at end of body for optimized loading-->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('.fixed-action-btn');
-                var instances = M.FloatingActionButton.init(elems, { hoverEnabled: true });
-            });
-            document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('.dropdown-trigger');
-                var instances = M.Dropdown.init(elems, { alignment: 'left' });
-            });
-            document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems, { edge: 'right' });
-            });
-            document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('select');
-                var instances = M.FormSelect.init(elems, {});
-            });
-        </script>
         <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/materialize.animations.js"></script>
     </body>
 
 </html>
