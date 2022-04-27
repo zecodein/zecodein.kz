@@ -1,12 +1,14 @@
 .backgroundImage {
-    position: sticky;
+    margin-top: 0;
     z-index: -1;
+    height: auto;
+    width: auto;
     max-width: 1620px;
     max-height: 1000px;
-    float: right;
+    width:100%;
 }
 
-blockquote{
+blockquote {
     border-left: 5px solid #38a4c4;
 }
 
@@ -17,4 +19,48 @@ blockquote{
 
 .card:hover {
     transform: scale(1.05);
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+
+    #index-banner .section {
+        top: 10%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
 }
