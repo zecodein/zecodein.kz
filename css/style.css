@@ -28,10 +28,7 @@ blockquote {
     color: rgba(0, 0, 0, 0.9);
 }
 
-.parallax-container .section {
-    width: 100%;
-}
-
+/* 
 @media only screen and (max-width: 992px) {
     .parallax-container .section {
         position: absolute;
@@ -63,4 +60,4 @@ blockquote {
     h5 {
         font-size: 20px;
     }
-}
+} */
