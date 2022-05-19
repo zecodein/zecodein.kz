@@ -33,8 +33,8 @@ $message = "Уважаемый " . $fio . "\n\n"
  . "Вы обратились со следующим запросом: " . "\n" . $comm . "\n\n"
  . "С уважением," . "\n" . "zecodein";
 
-$result1 = mail("sales@zecodein.kz",$category,$client,"From: " . $email)
-$result2 = mail($email,"Запрос отправлен успешно",$message,"From: sales@zecodein.kz")
+$result1 = mail("sales@zecodein.kz",$category,$client,"From: " . $email);
+$result2 = mail($email,"Запрос отправлен успешно",$message,"From: sales@zecodein.kz");
 
 if ($result1 && $result2) {
     $success = "Ваше запрос был отправлен успешно!";
