@@ -140,10 +140,10 @@
                 <div class="row">
                     <div class="col s12 m12 l6 grey-text text-darken-2">
                         <h4>Связаться с нами</h4>
-                        <form>
+                        <form action="send.php" method="POST">
                             <div class="input-field">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input type="text" id="exampleFormControlInput1" required class="validate">
+                                <input type="text" name="fio" id="exampleFormControlInput1" required class="validate">
                                 <label for="exampleFormControlInput1" class="active">Ваше ФИО*</label>
                                 <span class="helper-text" data-error="Введите свое имя." data-success=""></span>
                             </div>
@@ -156,12 +156,12 @@
                             </div>
                             <div class="input-field">
                                 <i class="material-icons prefix">email</i>
-                                <input type="email" id="exampleFormControlInput1" class="validate">
+                                <input type="email" name="email" id="exampleFormControlInput1" class="validate">
                                 <label for="exampleFormControlInput1" class="active">Электронная почта</label>
                             </div>
                             <div class="input-field">
                                 <i class="material-icons prefix">list</i>
-                                <select>
+                                <select name="category">
                                     <option value="" disabled selected>Выберите категорию</option>
                                     <option value="1">Веб-сайт</option>
                                     <option value="2">Программное обеспечение и веб сервисы</option>
@@ -169,14 +169,14 @@
                             </div>
                             <div class="input-field">
                                 <i class="material-icons prefix">create</i>
-                                <textarea id="exampleFormControlTextarea1" placeholder="Расскажите нам о своем запросе"
+                                <textarea id="exampleFormControlTextarea1" name="comm" placeholder="Расскажите нам о своем запросе"
                                     class="materialize-textarea"></textarea>
                                 <label for="exampleFormControlTextarea1" class="active">Комментарий</label>
                             </div>
                             <div>
                                 <span class="helper-text" data-error="<?php echo $failed;  ?>" data-success="<?php echo $success;  ?>"></span>
                             </div>
-                            <button class="btn waves-effect waves-light" type="submit" name="action">Отправить
+                            <button class="btn waves-effect waves-light" type="submit">Отправить
                                 <i class="material-icons right">send</i>
                             </button>
                         </form>
