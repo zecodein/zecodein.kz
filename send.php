@@ -2,30 +2,30 @@
 
 if (isset($_POST['submit'])) {
   $fio = $_POST['fio'];
-  $email = $_POST['email'];
+  $clientEmail = $_POST['email'];
   $tel = $_POST['tel'];
   $category = $_POST['category'];
   $comm = $_POST['comm'];
 
   $fio = htmlspecialchars($fio);
-  $email = htmlspecialchars($email);
+  $clientEmail = htmlspecialchars($clientEmail);
   $tel = htmlspecialchars($tel);
   $category = htmlspecialchars($category);
   $comm = htmlspecialchars($comm);
 
   $fio = urldecode($fio);
-  $email = urldecode($email);
+  $clientEmail = urldecode($clientEmail);
   $tel = urldecode($tel);
   $category = urldecode($category);
   $comm = urldecode($comm);
 
   $fio = trim($fio);
-  $email = trim($email);
+  $clientEmail = trim($clientEmail);
   $tel = trim($tel);
   $category = trim($category);
   $comm = trim($comm);
 
-  $client = "Client Name: " . $fio . "\n\n"
+  $clientMessage = "Client Name: " . $fio . "\n\n"
   . "Phone number: " . $tel . "\n\n"
   . "Client message: " . "\n" . $comm;
 
@@ -33,9 +33,9 @@ if (isset($_POST['submit'])) {
     . "Спасибо за обращение! Мы свяжемся с вами в ближайшее время!" . "\n\n"
     . "Вы обратились со следующим запросом: " . "\n" . $comm . "\n\n"
     . "С уважением," . "\n" . "zecodein";
-
-  $result1 = mail("sales@zecodein.kz",$category,$client,"From: " . $email);
-  $result2 = mail($email,"Запрос отправлен успешно",$message,"From: sales@zecodein.kz");
+  $myEmail = "sales@zecodein.kz";
+  $result1 = mail("sales@zecodein.kz", $category, $clientMessage, "From: " . $clientEmail);
+  $result2 = mail($clientEmail, "Запрос отправлен успешно", $message,"From: " . $myEmail);
 
   if ($result1 && $result2) {
       $success = "Ваше запрос был отправлен успешно!";
