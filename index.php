@@ -140,7 +140,7 @@
                 <div class="row">
                     <div class="col s12 m12 l6 grey-text text-darken-2">
                         <h4>Связаться с нами</h4>
-                        <form action="send.php" method="POST">
+                        <form action="" method="POST">
                             <div class="input-field">
                                 <i class="material-icons prefix">account_circle</i>
                                 <input type="text" name="fio" id="exampleFormControlInput1" required class="validate">
@@ -176,7 +176,7 @@
                             <div>
                                 <span class="helper-text" data-error="<?php echo $failed;  ?>" data-success="<?php echo $success;  ?>"></span>
                             </div>
-                            <button class="btn waves-effect waves-light" type="submit">Отправить
+                            <button class="btn waves-effect waves-light" type="submit" name="submit">Отправить
                                 <i class="material-icons right">send</i>
                             </button>
                         </form>
