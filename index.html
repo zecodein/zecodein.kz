@@ -43,11 +43,24 @@
             <li><a href="#contacts">Контакты</a></li>
         </ul>
         <div class="container">
-            <h3 class="center-align">Разработка сайтов и веб-сервисов</h3>
-            <p class="center-align flow-text">Создание сайтов любой сложности под нужды вашего бизнеса.</p>
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="center-align">Разработка сайтов и веб-сервисов</h3>
+
+                </div>
+                <div class="col s12">
+                    <p class="center-align flow-text">Создание сайтов любой сложности под нужды вашего бизнеса.</p>
+                </div>
+                <div class="col s6 offset-s5">
+                    <a href="#request" class="btn btn-large cyan accent-4">Записаться</a>
+                </div>
+            </div>
+            
         </div>
+
         <section style="background-image: linear-gradient(to bottom, #38a4c4, #313a46);">
-            <div class="container white-text">
+            <div style="margin-top: 100px;" class="container white-text">
+                <br>
                 <h3>Веб разработка</h3>
                 <div class="row">
                     <div class="col s12 m12 l4">
@@ -132,6 +145,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
             </div>
         </section>
 
@@ -139,7 +153,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m12 l6 grey-text text-darken-2">
-                        <h4>Связаться с нами</h4>
+                        <h4 id="request">Связаться с нами</h4>
                         <form action="" method="POST">
                             <div class="input-field">
                                 <i class="material-icons prefix">account_circle</i>
@@ -169,12 +183,14 @@
                             </div>
                             <div class="input-field">
                                 <i class="material-icons prefix">create</i>
-                                <textarea id="exampleFormControlTextarea1" name="comm" placeholder="Расскажите нам о своем запросе"
+                                <textarea id="exampleFormControlTextarea1" name="comm"
+                                    placeholder="Расскажите нам о своем запросе"
                                     class="materialize-textarea"></textarea>
                                 <label for="exampleFormControlTextarea1" class="active">Комментарий</label>
                             </div>
                             <div>
-                                <span class="helper-text" data-error="<?php echo $failed;  ?>" data-success="<?php echo $success;  ?>"></span>
+                                <span class="helper-text" data-error="<?php echo $failed;  ?>"
+                                    data-success="<?php echo $success;  ?>"></span>
                             </div>
                             <button class="btn waves-effect waves-light" type="submit" name="submit">Отправить
                                 <i class="material-icons right">send</i>
