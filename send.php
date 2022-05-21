@@ -31,16 +31,16 @@ if (isset($_POST['submit'])) {
 
   $message = "Уважаемый " . $fio . "\n\n"
     . "Спасибо за обращение! Мы свяжемся с вами в ближайшее время!" . "\n\n"
-    . "Вы обратились со следующим запросом: " . "\n" . $comm . "\n\n"
+    . "Вы обратились со следующим запросом: " . "\n" . $clientMessage . "\n\n"
     . "С уважением," . "\n" . "zecodein";
   $myEmail = "sales@zecodein.kz";
-  $result1 = mail("sales@zecodein.kz", $category, $clientMessage, "From: " . $clientEmail);
+  $result1 = mail("sales@zecodein.kz", $category, $clientMessage, "From: " . $myEmail);
   $result2 = mail($clientEmail, "Запрос отправлен успешно", $message,"From: " . $myEmail);
 
   if ($result1 && $result2) {
       $success = "Ваше запрос был отправлен успешно!";
     } else {
-      $failed = "Извините! Ваш запрос не был отправлен, проверьте данные и попробуйте   отправить снова.";
+      $failed = "Извините! Ваш запрос не был отправлен, проверьте данные и попробуйте отправить снова.";
     }
 }
 ?>
