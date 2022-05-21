@@ -177,8 +177,8 @@
                                 <i class="material-icons prefix">list</i>
                                 <select name="category">
                                     <option value="" disabled selected>Выберите категорию</option>
-                                    <option value="1">Веб-сайт</option>
-                                    <option value="2">Программное обеспечение и веб сервисы</option>
+                                    <option value="Веб-сайт">Веб-сайт</option>
+                                    <option value="Программное обеспечение и веб сервисы">Программное обеспечение и веб сервисы</option>
                                 </select>
                             </div>
                             <div class="input-field">
