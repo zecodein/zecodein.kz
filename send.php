@@ -25,16 +25,17 @@ if (isset($_POST['submit'])) {
   $category = trim($category);
   $comm = trim($comm);
 
-  $clientMessage = "Client Name: " . $fio . "\n\n"
-  . "Phone number: " . $tel . "\n\n"
-  . "Client message: " . "\n" . $comm;
+  $clientMessage = "Имя: " . $fio . "\n\n"
+  . "Телефон: " . $tel . "\n\n"
+  . "Категория: " . $category . "\n\n"  
+  . "Комментарий: " . "\n" . $comm;
 
   $message = "Уважаемый " . $fio . "\n\n"
     . "Спасибо за обращение! Мы свяжемся с вами в ближайшее время!" . "\n\n"
     . "Вы обратились со следующим запросом: " . "\n" . $clientMessage . "\n\n"
     . "С уважением," . "\n" . "zecodein";
   $myEmail = "sales@zecodein.kz";
-  $result1 = mail("sales@zecodein.kz", $category, $clientMessage, "From: " . $myEmail);
+  $result1 = mail($myEmail, $category, $clientMessage, "From: " . $myEmail);
   $result2 = mail($clientEmail, "Запрос отправлен успешно", $message,"From: " . $myEmail);
 
   if ($result1 && $result2) {
